@@ -25,7 +25,26 @@ Insert this line into this file
 
 
 cd "D:/users/{USER}"
-mkdir .emacs.d
 git clone git://github.com/arangan/dotemacs.git .emacs.d
 
+Open command prompt as Administrator (for Windows 7 and above)
 mklink .emacs .emacs.d\emacs
+
+
+• Reprogramming the Caps Lock to Control
+Run the "emacs-vi.exe" file (made with auto-hotkey) and compiled as an exe.
+This will turn Caps Lock to Control only when inside emacs.
+Caps Lock to ESC when inside VI
+
+Source of the AutoHotKey
+;; use caps lock as control key, when emacs is running.
+#IfWinActive ahk_class Emacs
+ CapsLock::Ctrl
+#IfWinActive 
+
+
+;; use control key as escape, when vim is running
+#IfWinActive ahk_class Vim
+ CapsLock::Escape
+#IfWinActive
+
