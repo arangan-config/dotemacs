@@ -1,4 +1,5 @@
 (package-initialize)                   ; Keep this line always at the top
+(toggle-frame-maximized)               ; maximize emacs -- works for both windows and linux
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -17,7 +18,6 @@
    ((string-equal system-type "windows-nt") ; Microsoft Windows
       (set-face-font 'default "Consolas-10")
       (setq default-directory "d:/users/arvind" )
-      (toggle-frame-maximized) ;; maximize emacs
    )
    ((string-equal system-type "darwin")     ; Mac OS X
       (setq default-directory "~/" )

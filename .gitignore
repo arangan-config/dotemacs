@@ -3,4 +3,6 @@ tags
 *.swp
 auto-save-list
 tutorial
-ido.last
+ac-comphist.dat 
+projectile*
+ido*
