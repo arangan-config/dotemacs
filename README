@@ -1,0 +1,31 @@
+
+
+Installation:
+
+On LINUX, MAC or Nixes
+=======================
+  git clone git://github.com/arangan/dotemacs.git ~/.emacs.d
+
+Create Symlinks:
+
+$ ln -s ~/.emacs.d/emacs ~/.emacs
+
+
+On Windows
+===========
+Since the HOME directory is dependent on the HOME env. variable and meddling with this variable can create potential problems with other applications.
+So, it is best to specify a HOME variable for emacs.
+
+Create a file called "site-start.el" at the following location (the directory where emacs is installed)
+c:\bin\emacs\share\emacs\site-lisp\
+
+Insert this line into this file
+
+(setenv "HOME" "D:/users/{USER}")
+
+
+cd "D:/users/{USER}"
+mkdir .emacs.d
+git clone git://github.com/arangan/dotemacs.git .emacs.d
+
+mklink .emacs .emacs.d\emacs
