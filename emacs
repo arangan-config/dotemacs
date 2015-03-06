@@ -4,6 +4,7 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (global-hl-line-mode 1)
+;;(set-fringe-mode `(1 . 0))
 (setq inhibit-startup-message t)
 (setq ring-bell-function 'ignore)
 (setq column-number-mode t)            ; show the column
@@ -28,6 +29,13 @@
       (set-face-font 'default "DejaVu Sans Mono-10")
    )
 )
+
+;; (require 'linum)
+;; (global-linum-mode 1)
+;; (setq linum-format "%d \u2502 ")
+;; (global-set-key [f9] 'linum)
+(require 'blank-mode)
+(global-set-key [f9] 'blank-mode)
 
 (when (require 'powerline nil 'noerror)
 (powerline-default-theme))
