@@ -76,3 +76,5 @@
 ;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
 ;;(load-theme 'solarized-dark t)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

@@ -1,3 +1,13 @@
+C-j		View-scroll-line-forward
 C-q <tab> --- to insert tab in a scratch buffer as normally tab key wont work in the scratch buffer
 C-x <tab> --- to indent lines or region
 C-x C-o   Delete all but one of many consecutive blank lines (delete-blank-lines).
+C-x U   shows undo map
+
+
+TODO
+-----
+understand visual and logical line end
+show currently mapped keys and change shortcuts.
+get the left gutter with line numbers and the tilda character and Fringe
+get autocomplete going....for normal text, python, php, C++ and powershell.
