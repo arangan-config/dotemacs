@@ -1,5 +1,8 @@
 (package-initialize)                   ; Keep this line always at the top
-(toggle-frame-maximized)               ; maximize emacs -- works for both windows and linux
+;;(toggle-frame-maximized)               ; maximize emacs -- works for both windows and linux
+(if (frame-parameter nil 'fullscreen)
+    (message "already fullscreen")
+        (toggle-frame-maximized))
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
